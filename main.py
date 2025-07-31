@@ -23,6 +23,10 @@ if __name__ == "__main__":
             subject="System Design",
             level=Levels.INTERMEDIATE,
         ),
+        FactGeneratorInput(
+            subject="Cyber Security",
+            level=Levels.INTERMEDIATE,
+        ),
 
         ## Infra/DevOps
         FactGeneratorInput(

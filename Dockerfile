@@ -7,7 +7,7 @@ RUN pip install uv
 
 # Copy Pipfile first to leverage Docker caching.
 # If Pipfile changes, this layer and subsequent layers will be rebuilt.
-COPY pyproject.toml ./
+COPY pyproject.toml uv.lock ./
 
 # IMPORTANT: Remove Pipfile.lock *if it exists in the build context*
 # This forces pipenv to resolve dependencies *only* from Pipfile

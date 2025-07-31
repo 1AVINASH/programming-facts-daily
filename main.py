@@ -80,7 +80,7 @@ if __name__ == "__main__":
         ),
     ]
 
-    for subject in subjects[:1]:
+    for subject in subjects:
         app_logger.info(f"The subject is {subject}")
         fact_generator = FactGenerator(subject)
         fact_generator.get_fact()

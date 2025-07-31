@@ -74,7 +74,6 @@ class FactGenerator:
             messages=history,
             temperature=0.7
         )
-        print(response)
         assistant_reply = response.choices[0].message.content.strip()
 
         # Append assistant response to history

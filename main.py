@@ -1,3 +1,4 @@
+from logger import app_logger
 from fact_generator import FactGenerator, FactGeneratorInput, Levels
 
 if __name__ == "__main__":
@@ -21,6 +22,16 @@ if __name__ == "__main__":
         FactGeneratorInput(
             subject="System Design",
             level=Levels.INTERMEDIATE,
+        ),
+
+        ## Infra/DevOps
+        FactGeneratorInput(
+            subject="Docker",
+            level=Levels.INTERMEDIATE,
+        ),
+        FactGeneratorInput(
+            subject="Kubernets",
+            level=Levels.BEGINNER,
         ),
 
         ## DBs/Cache
@@ -66,5 +77,6 @@ if __name__ == "__main__":
     ]
 
     for subject in subjects[:1]:
+        app_logger.info(f"The subject is {subject}")
         fact_generator = FactGenerator(subject)
         fact_generator.get_fact()

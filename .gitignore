@@ -1,5 +1,5 @@
 **pycache**
 **.venv**
 **.env
-./facts/**
-./chat_histories/**
+facts/
+chat_histories/
